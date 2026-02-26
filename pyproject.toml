@@ -18,6 +18,9 @@ pytest-mock = "^3.11.1"
 test = "pytest"
 tests = "pytest"
 
+[tool.poetry.requires-plugins]
+poethepoet = ">=0.39"
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py", "*_test.py"]
@@ -76,6 +79,8 @@ description = "A reverse TCP tunnel with Python, using only standard library."
 readme = "README.md"
 license = "MIT"
 
-[project.scripts]
-shootback-master = "master:main_master"
-shootback-slaver = "slaver:main_slaver"
+[tool.poe.tasks.shootback_master]
+script = "master:main_master"
+
+[tool.poe.tasks.shootback_slaver]
+script = "slaver:main_slaver"
