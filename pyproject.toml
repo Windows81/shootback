@@ -17,6 +17,8 @@ pytest-mock = "^3.11.1"
 [tool.poetry.scripts]
 test = "pytest"
 tests = "pytest"
+shootback-master = "master:main_master"
+shootback-slaver = "slaver:main_slaver"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -68,7 +70,3 @@ output = "coverage.xml"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[project.scripts]
-shootback-master = "master:main_master"
-shootback-slaver = "slaver:main_slaver"
