@@ -14,9 +14,9 @@ pytest = "^7.4.0"
 pytest-cov = "^4.1.0"
 pytest-mock = "^3.11.1"
 
-[tool.poetry.scripts]
-test = "pytest"
-tests = "pytest"
+# [tool.poetry.scripts]
+# test = "pytest"
+# tests = "pytest"
 
 [tool.poetry.requires-plugins]
 poethepoet = ">=0.39"
