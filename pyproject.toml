@@ -69,3 +69,7 @@ output = "coverage.xml"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+shootback-master = "master:main_master"
+shootback-slaver = "slaver:main_slaver"
