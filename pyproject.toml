@@ -73,7 +73,6 @@ build-backend = "poetry.core.masonry.api"
 name = "shootback"
 version = "1.0.0"
 description = "A reverse TCP tunnel with Python, using only standard library."
-authors = ["Shootback Contributors"]
 readme = "README.md"
 license = "MIT"
 
