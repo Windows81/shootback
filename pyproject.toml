@@ -69,6 +69,14 @@ output = "coverage.xml"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[project]
+name = "shootback"
+version = "1.0.0"
+description = "A reverse TCP tunnel with Python, using only standard library."
+authors = ["Shootback Contributors"]
+readme = "README.md"
+license = "MIT"
+
 [project.scripts]
 shootback-master = "master:main_master"
 shootback-slaver = "slaver:main_slaver"
