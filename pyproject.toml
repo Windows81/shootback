@@ -73,7 +73,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poe.tasks.shootback_master]
-script = "master.main_master"
+script = "master.main_master:None"
 
 [tool.poe.tasks.shootback_slaver]
-script = "slaver.main_slaver"
+script = "slaver.main_slaver:None"
